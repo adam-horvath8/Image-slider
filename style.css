@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.slider {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slider-button {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  background-color: rgb(0, 0, 0, 0.1);
+  border: none;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.slider-button:hover {
+  background-color: rgb(0, 0, 0, 0.2);
+  color: white;
+}
+
+.slider-button.rigth {
+  right: 20px;
+}
+.slider-button.left {
+  left: 20px;
+}
+
+.dots-container {
+  z-index: 2;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dots {
+  height: 50px;
+  width: 50px;
+  background-color: bisque;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.1);
+  border: 2px solid rgb(255, 255, 255, 0.5);
+}
+
+.dots.selected {
+  background-color: rgb(0, 0, 0, 0.2);
+  border-color: white;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider">
+        <button class="slider-button left" id="left-button">&#10232;</button>
+        <button class="slider-button rigth" id="rigth-button">&#10233;</button>
+
+        <div class="slide active">
+          <img
+            src="./images/sebastiano-corti-iaxcxxPAYu0-unsplash.jpg"
+            alt="rock under nigth sky"
+            class="img1"
+          />
+        </div>
+        <div class="slide active">
+          <img
+            src="./images/k-soma-plXL7vYXfyA-unsplash.jpg"
+            alt="dark lake"
+            class="img2"
+          />
+        </div>
+        <div class="slide active">
+          <img
+            src="./images/marek-piwnicki-l4OX3KHHQxQ-unsplash.jpg"
+            alt="sun ligth"
+            class="img3"
+          />
+        </div>
+        <div class="dots-container">
+          <div class="dots" id="dot1"></div>
+          <div class="dots" id="dot2"></div>
+          <div class="dots" id="dot3"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
